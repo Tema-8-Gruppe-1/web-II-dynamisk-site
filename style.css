@@ -281,4 +281,42 @@ body {
     padding-top: 1rem;
     margin-top: 2rem;
   }
+
+  .card1 {
+    background-color: rgba(201, 202, 162, 1);
+    border-radius: 20px;
+    padding-block: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+
+  .card2 {
+    background-color: rgba(138, 131, 50, 1);
+    border-radius: 20px;
+    padding-block: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+
+  .card2_1 {
+    background-color: rgba(138, 131, 50, 1);
+    border-radius: 20px;
+    padding-block: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid1_1 img {
+    width: 20%;
+  }
 }
