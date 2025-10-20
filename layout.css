@@ -4,15 +4,48 @@
   box-sizing: border-box;
 }
 
-img {
-  width: 100%;
-  height: auto;
+@media (max-width: 800px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .logo {
+    width: 32%;
+  }
+
+  .burgermenu {
+    width: 20%;
+  }
+  .web {
+    display: none;
+  }
 }
 
-.logo {
-  width: 32%;
-}
+@media (min-width: 800px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
 
-.burgermenu {
-  width: 20%;
+  .burgermenu {
+    width: 15%;
+  }
+  .logo {
+    display: none;
+  }
+
+  .mobil {
+    display: none;
+  }
+
+  .web {
+    margin-top: 1rem;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
 }
