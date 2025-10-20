@@ -25,6 +25,11 @@ body {
     border-bottom-right-radius: 20px;
   }
 
+  .header_underside {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
   h1 {
     text-align: center;
     padding-block: 2rem;
@@ -129,6 +134,7 @@ body {
 
   .footer_a {
     text-decoration: none;
+    color: rgba(51, 51, 51, 1);
   }
 
   .footer1 {
