@@ -25,7 +25,7 @@ function showRecipes(recipes) {
   recipes.forEach((recipe) => {
     //Går igennem alle opskrifter,
     opskriftliste_container.innerHTML += ` <article> 
-       <a href="opskrift.html?id=${recipe.id}">
+       <a href="opskrifter.html?id=${recipe.id}">
        <img src="https://cdn.dummyjson.com/recipe-images/${recipe.id}.webp" alt="">
     <p>${recipe.name}</p>
     <p>€ ${recipe.rating}</p></a>
