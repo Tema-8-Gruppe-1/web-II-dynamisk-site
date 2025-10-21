@@ -455,6 +455,15 @@ body {
     gap: 1rem;
   }
 
+  .madplan {
+    background-color: rgba(201, 202, 162, 1);
+    border-radius: 20px;
+    padding-block: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+
   .grid1_1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -590,12 +599,7 @@ body {
 }
 
 /******** ROSA ******/
-/*************** Reset *********************/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 img {
   width: 100%;
   height: auto;
