@@ -19,7 +19,7 @@ function showFiltered(event) {
 let allData, currentDataSet;
 
 const opskriftliste_container = document.querySelector(".opskriftliste_container");
-const url = `https://dummyjson.com/recipes?limit=20`; //Url til api'et
+const url = `https://dummyjson.com/recipes?limit=50`; //Url til api'et
 
 // document.querySelector("#filters").addEventListener("click", showFiltered);
 

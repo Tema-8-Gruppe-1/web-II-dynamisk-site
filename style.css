@@ -113,6 +113,19 @@ body {
     gap: 1rem;
   }
 
+  .filter_knap {
+    padding: 10px 20px; /* Indre margin (plads omkring teksten) */
+    background-color: rgba(223, 96, 41, 1); /* Baggrundsfarve (blå) */
+    color: rgba(51, 51, 51, 0.86); /* Tekstfarve */
+    text-decoration: none; /* Fjern underline (standard på links) */
+    border-radius: 5px; /* Runde hjørner */
+    font-size: 16px; /* Tekststørrelse */
+    text-align: center; /* Centrer teksten */
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+
   .knap_sek {
     padding: 10px 20px; /* Indre margin (plads omkring teksten) */
     background-color: rgba(223, 96, 41, 1); /* Baggrundsfarve (blå) */
@@ -472,6 +485,19 @@ body {
     gap: 1rem;
   }
 
+  .filter_knap {
+    padding: 10px 20px; /* Indre margin (plads omkring teksten) */
+    background-color: rgba(223, 96, 41, 1); /* Baggrundsfarve (blå) */
+    color: rgba(51, 51, 51, 0.86); /* Tekstfarve */
+    text-decoration: none; /* Fjern underline (standard på links) */
+    border-radius: 5px; /* Runde hjørner */
+    font-size: 16px; /* Tekststørrelse */
+    text-align: center; /* Centrer teksten */
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+
   .madplan {
     background-color: rgba(201, 202, 162, 1);
     border-radius: 20px;
@@ -624,6 +650,10 @@ nav a {
 /******** ROSA ******/
 
 /*** opskriftliste styling ***/
+.madplan_overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
 
 .opskriftliste_container {
   display: grid;
