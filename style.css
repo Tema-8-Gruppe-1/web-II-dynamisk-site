@@ -1,6 +1,7 @@
 body {
   max-width: 1200px;
   margin: 0 auto;
+  background-color: #ebe4cb;
 }
 
 @media (max-width: 800px) {
@@ -28,7 +29,7 @@ body {
   h1 {
     text-align: center;
     padding-block: 2rem;
-    color: rgba(51, 51, 51, 1);
+    color: rgba(51, 51, 51, 0.86);
     font-family: "Cormorant Unicase", serif;
   }
 
@@ -36,24 +37,30 @@ body {
     padding-block: 0.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    font-family: "Quicksand", sans-serif;
+    color: rgba(51, 51, 51, 0.86);
   }
 
   h4 {
     padding-block: 0.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    font-family: "Quicksand", sans-serif;
+    color: rgba(51, 51, 51, 0.86);
   }
 
   p {
     padding-block: 0.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    font-family: "Quicksand", sans-serif;
+    color: rgba(51, 51, 51, 0.86);
   }
 
   .h1_sekundaer_side {
     text-align: center;
     padding-block: 2rem;
-    color: rgba(51, 51, 51, 1);
+    color: rgba(51, 51, 51, 0.86);
     font-family: "Cormorant Unicase", serif;
     background-color: rgba(138, 131, 50, 1);
     border-radius: 20px;
@@ -73,7 +80,7 @@ body {
   }
 
   form h3 {
-    color: rgba(51, 51, 51, 1);
+    color: rgba(51, 51, 51, 0.86);
   }
 
   .card1 {
@@ -109,7 +116,7 @@ body {
   .knap_sek {
     padding: 10px 20px; /* Indre margin (plads omkring teksten) */
     background-color: rgba(223, 96, 41, 1); /* Baggrundsfarve (blå) */
-    color: rgba(51, 51, 51, 1); /* Tekstfarve */
+    color: rgba(51, 51, 51, 0.86); /* Tekstfarve */
     text-decoration: none; /* Fjern underline (standard på links) */
     border-radius: 5px; /* Runde hjørner */
     font-size: 16px; /* Tekststørrelse */
@@ -138,12 +145,13 @@ body {
   .container {
     position: relative;
   }
+
   .overlaylink {
     position: absolute;
     top: 80%; /* Placér linket i midten af billedet (vertikalt) */
     left: 50%; /* Placér linket i midten af billedet (horisontalt) */
     transform: translate(-50%, -50%); /* Juster linket for at centrere det præcist */
-    color: rgba(51, 51, 51, 1); /* Farve på teksten */
+    color: rgba(51, 51, 51, 0.86); /* Farve på teksten */
     font-size: 20px; /* Skriftstørrelse */
     background-color: rgba(223, 96, 41, 1); /* Semi-transparent baggrund for synlighed */
     padding: 10px 20px; /* Polstring omkring linket */
@@ -154,7 +162,7 @@ body {
 
   .footer_a {
     text-decoration: none;
-    color: rgba(51, 51, 51, 1);
+    color: rgba(51, 51, 51, 0.86);
   }
 
   .footer1 {
@@ -181,7 +189,7 @@ body {
 
   .user-menu a {
     text-decoration: none;
-    color: #333;
+    color: rgba(51, 51, 51, 0.86);
     padding: 8px 10px;
     transition: background 0.2s;
   }
@@ -246,7 +254,7 @@ body {
 
   nav ul {
     list-style: none;
-    margin: 0;
+    margin: 120px 0 0 0; /* ryk 100px ned */
     padding: 0;
   }
 
@@ -262,11 +270,11 @@ body {
   }
 
   nav li:nth-child(2) {
-    background: #e6682b;
+    background: rgba(223, 96, 41, 1);
   }
 
   nav li:nth-child(3) {
-    background: #4c2724;
+    background: rgba(84, 46, 46, 1);
     color: #d9d4b0;
   }
 
@@ -275,11 +283,11 @@ body {
   }
 
   nav li:nth-child(5) {
-    background: #e6682b;
+    background: rgba(223, 96, 41, 1);
   }
 
   nav li:nth-child(6) {
-    background: #4c2724;
+    background: rgba(84, 46, 46, 1);
     color: #d9d4b0;
   }
 
@@ -313,7 +321,7 @@ body {
   h1 {
     text-align: center;
     padding-block: 2rem;
-    color: rgba(51, 51, 51, 1);
+    color: rgba(51, 51, 51, 0.86);
     font-family: "Cormorant Unicase", serif;
     font-size: 4rem;
   }
@@ -322,29 +330,38 @@ body {
     padding-block: 0.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    color: rgba(51, 51, 51, 0.86);
   }
 
   h4 {
     padding-block: 0.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    color: rgba(51, 51, 51, 0.86);
   }
 
   p {
     padding-block: 0.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    color: rgba(51, 51, 51, 0.86);
   }
 
   .container {
     position: relative;
+  }
+
+  .container img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
   .overlaylink {
     position: absolute;
     top: 80%; /* Placér linket i midten af billedet (vertikalt) */
     left: 50%; /* Placér linket i midten af billedet (horisontalt) */
     transform: translate(-50%, -50%); /* Juster linket for at centrere det præcist */
-    color: rgba(51, 51, 51, 1); /* Farve på teksten */
+    color: rgba(51, 51, 51, 0.86); /* Farve på teksten */
     font-size: 20px; /* Skriftstørrelse */
     background-color: rgba(223, 96, 41, 1); /* Semi-transparent baggrund for synlighed */
     padding: 10px 20px; /* Polstring omkring linket */
@@ -355,7 +372,7 @@ body {
 
   .footer_a {
     text-decoration: none;
-    color: rgba(51, 51, 51, 1);
+    color: rgba(51, 51, 51, 0.86);
     margin-left: 8rem;
   }
 
@@ -390,7 +407,7 @@ body {
   .knap_sek {
     padding: 10px 20px; /* Indre margin (plads omkring teksten) */
     background-color: rgba(223, 96, 41, 1); /* Baggrundsfarve (blå) */
-    color: rgba(51, 51, 51, 1); /* Tekstfarve */
+    color: rgba(51, 51, 51, 0.86); /* Tekstfarve */
     text-decoration: none; /* Fjern underline (standard på links) */
     border-radius: 5px; /* Runde hjørner */
     font-size: 16px; /* Tekststørrelse */
@@ -464,9 +481,15 @@ body {
     margin-top: 1rem;
   }
 
-  .grid1_1 {
+  .grid_1-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* to kolonner: venstre og højre side */
+    gap: 1.5rem; /* afstand mellem elementerne */
+    border-radius: 20px; /* afrundede hjørner */
+    padding: 1rem; /* luft inde i rammen */
+    max-width: 1200px;
+    margin: 2rem auto; /* centrer hele sektionen midt på siden */
+    box-sizing: border-box;
   }
 
   .grid1_1 img {
@@ -486,7 +509,7 @@ body {
 
   .user-menu a {
     text-decoration: none;
-    color: black;
+    color: rgba(51, 51, 51, 0.86);
     font-weight: bold;
     margin: 0 10px; /* afstand mellem links */
   }
@@ -551,60 +574,55 @@ body {
 
   nav ul {
     list-style: none;
-    margin: 0;
+    margin: 120px 0 0 0; /* ryk 100px ned */
     padding: 0;
   }
+}
 
-  /* --- Farvede rækker --- */
-  nav li {
-    font-size: 2rem;
-    font-weight: 400;
-    padding: 1rem 2rem;
-  }
+/* --- Farvede rækker --- */
+nav li {
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 1rem 2rem;
+}
 
-  nav li:nth-child(1) {
-    background: #cdd0a3;
-  }
+nav li:nth-child(1) {
+  background: #cdd0a3;
+}
 
-  nav li:nth-child(2) {
-    background: #e6682b;
-  }
+nav li:nth-child(2) {
+  background: #e6682b;
+}
 
-  nav li:nth-child(3) {
-    background: #4c2724;
-    color: #d9d4b0;
-  }
+nav li:nth-child(3) {
+  background: #4c2724;
+  color: #d9d4b0;
+}
 
-  nav li:nth-child(4) {
-    background: #cdd0a3;
-  }
+nav li:nth-child(4) {
+  background: #cdd0a3;
+}
 
-  nav li:nth-child(5) {
-    background: #e6682b;
-  }
+nav li:nth-child(5) {
+  background: #e6682b;
+}
 
-  nav li:nth-child(6) {
-    background: #4c2724;
-    color: #d9d4b0;
-  }
+nav li:nth-child(6) {
+  background: #4c2724;
+  color: #d9d4b0;
+}
 
-  nav li:nth-child(7) {
-    background: #88843c;
-  }
+nav li:nth-child(7) {
+  background: #88843c;
+}
 
-  nav a {
-    color: inherit;
-    text-decoration: none;
-  }
+nav a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /******** ROSA ******/
 
-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
 /*** opskriftliste styling ***/
 
 .opskriftliste_container {
@@ -621,6 +639,7 @@ img {
 
 .opskriftliste_container p {
   text-align: center;
+  color: rgba(51, 51, 51, 0.86);
 }
 
 .opskriftliste_container a {
@@ -671,7 +690,7 @@ img {
 main .recipe-content p {
   font-size: 0.95rem;
   line-height: 1.6;
-  color: #333;
+  color: rgba(51, 51, 51, 0.86);
   margin-bottom: 2rem;
 }
 .recipe-content button {
