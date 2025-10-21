@@ -481,6 +481,11 @@ body {
     margin-top: 1rem;
   }
 
+  .grid1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr; /* to kolonner: venstre og højre side */
