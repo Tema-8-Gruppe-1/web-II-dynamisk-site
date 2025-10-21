@@ -588,3 +588,110 @@ body {
     text-decoration: none;
   }
 }
+
+/******** ROSA ******/
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/*** opskriftliste styling ***/
+
+.opskriftliste_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  padding: 5rem;
+  gap: 20px;
+}
+
+.opskriftliste_container img {
+  background-color: #d9ccbf;
+  margin-bottom: 1rem;
+}
+
+.opskriftliste_container p {
+  text-align: center;
+}
+
+.opskriftliste_container a {
+  text-decoration: none;
+  color: black;
+}
+
+.opskriftliste_container article {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .opskriftliste_container {
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+  }
+}
+
+/*** opskrift styling ***/
+
+.opskrift_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 4rem 6rem;
+  background-color: #e3dcc0; /* varm beige baggrund */
+  font-family: "Cormorant Garamond", serif;
+  color: #1a1a1a;
+}
+
+.recipe-content {
+  max-width: 450px;
+}
+
+.recipe-content h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+.recipe-content ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+main .recipe-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 2rem;
+}
+.recipe-content button {
+  background-color: #e1834d; /* varm orange */
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 20px;
+  font-family: "Cormorant Garamond", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.recipe-content button:hover {
+  background-color: #c76f3d;
+}
+.opskrift_container article {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .opskrift_container {
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+  }
+}
