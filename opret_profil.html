@@ -18,17 +18,32 @@
 
 <body>
     <header>
-        <div class="menu_mobilsite">
-            <img class="logo" src="logo.png" alt="logo">
-            <a href="menu.html">
-                <img class="burgermenu" src="burgermenu.png" alt="menu">
-            </a>
+        <div class="header_index">
+            <div class="menu_mobilsite">
+                <img class="logo" src="logo.png" alt="logo">
+                <div class="burger" id="burger">
+                    <span></span><span></span><span></span>
+                </div>
+
+                <!-- Menu -->
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="opskrifer.html">Opskrifter</a></li>
+                        <li><a href="madplan.html">Madplan</a></li>
+                        <li><a href="omos.html">Om os</a></li>
+                        <li><a href="min_profil.html">Min profil</a></li>
+                        <li><a href="opret_profil.html">Opret profil</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h1 class="order">OPRET DIN PROFIL</h1>
         </div>
+
     </header>
     <main>
 
         <div class="oplysninger">
-            <h1 class="h1_sekundaer_side">OPRET DIN PROFIL</h1>
 
             <form>
                 <h3>Navn</h3>
@@ -49,6 +64,24 @@
         </div>
     </main>
     <footer>
-
+        <h1>GOURMET PÅ SU</h1>
+        <div class="footer1">
+            <a class="footer_a" href="opret_profil.html">TILMELD DIG HER</a>
+            <a class="footer_a" href="opret_profil.html">MIN PROFIL</a>
+        </div>
+        <div class="sociale">
+            <img src="svg/instagram.svg" alt="instagram">
+            <img src="svg/facebook.svg" alt="facebook">
+            <img src="svg/pinterest.svg" alt="pinterrest">
+        </div>
     </footer>
+    <script>
+        const burger = document.getElementById("burger");
+        const menu = document.getElementById("menu");
+
+        burger.addEventListener("click", () => {
+            burger.classList.toggle("open");
+            menu.classList.toggle("open");
+        });
+    </script>
 </body>

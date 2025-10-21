@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Min profil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="header_index">
+            <div class="menu_mobilsite">
+                <img class="logo" src="logo.png" alt="logo">
+                <div class="burger" id="burger">
+                    <span></span><span></span><span></span>
+                </div>
+
+                <!-- Menu -->
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="opskrifer.html">Opskrifter</a></li>
+                        <li><a href="madplan.html">Madplan</a></li>
+                        <li><a href="omos.html">Om os</a></li>
+                        <li><a href="min_profil.html">Min profil</a></li>
+                        <li><a href="opret_profil.html">Opret profil</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h1 class="order">MIN PROFIL</h1>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="grid1_1">
+            <div class="card2">
+                <h1>Dit nuværende abonnoment</h1>
+                <h2>Lorem Ipsum</h2>
+                <p>ngjhgioshjfsjifgdrjgrgjsgkkjflrxjdlhib
+                    fjkxgnljxfgjcigjxiljfzsæfjxdg
+                    znfjxdguhuofhjjzidjijfijdxijgfxngfcbnklxfg
+                    fhbdkjbxjlgjlxdhgfdjfdfodxæfæxd
+                    nj,bxnlgjlxdjfjdxljfgxdkgjklg
+                    fnxdjnfljseflxjflsjlfesjflsefnglkfgtyu</p>
+                <h2>Lorem Ipsum</h2>
+                <p>ngjhgioshjfsjifgdrjgrgjsgkkjflrxjdlhib
+                    fjkxgnljxfgjcigjxiljfzsæfjxdg
+                    znfjxdguhuofhjjzidjijfijdxijgfxngfcbnklxfg
+                    fhbdkjbxjlgjlxdhgfdjfdfodxæfæxd
+                    nj,bxnlgjlxdjfjdxljfgxdkgjklg
+                    fnxdjnfljseflxjflsjlfesjflsefnglkfgtyu</p>
+            </div>
+
+            <div class="card1">
+                <h1>Min profil</h1>
+                <img src="img/index1.webp" alt="">
+                <div class="card2_1">
+                    <h4>Alder</h4>
+                    <p>23</p>
+                </div>
+                <div class="card2_1">
+                    <h4>Opskrifter prøvet</h4>
+                    <p>14</p>
+                </div>
+                <div class="card2_1">
+                    <h4>Madplaner prøvet</h4>
+                    <p>5</p>
+                </div>
+            </div>
+        </div>
+
+        <h1>MINE FARVORITTER</h1>
+    </main>
+    <footer>
+        <h1>GOURMET PÅ SU</h1>
+        <div class="footer1">
+            <a class="footer_a" href="opret_profil.html">TILMELD DIG HER</a>
+            <a class="footer_a" href="opret_profil.html">MIN PROFIL</a>
+        </div>
+        <div class="sociale">
+            <img src="svg/instagram.svg" alt="instagram">
+            <img src="svg/facebook.svg" alt="facebook">
+            <img src="svg/pinterest.svg" alt="pinterrest">
+        </div>
+    </footer>
+    <script>
+        const burger = document.getElementById("burger");
+        const menu = document.getElementById("menu");
+
+        burger.addEventListener("click", () => {
+            burger.classList.toggle("open");
+            menu.classList.toggle("open");
+        });
+    </script>
