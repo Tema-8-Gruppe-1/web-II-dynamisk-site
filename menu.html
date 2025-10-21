@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgermenu med farver</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: #111;
+        }
+
+        /* --- Burger-knap --- */
+        .burger {
+            position: fixed;
+            top: 15px;
+            right: 20px;
+            width: 30px;
+            height: 24px;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .burger span {
+            display: block;
+            width: 100%;
+            height: 3px;
+            background: #d9d9a7;
+            margin: 5px 0;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+
+        /* X animation */
+        .burger.open span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .burger.open span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .burger.open span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        /* --- Menu-overlay --- */
+        nav {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            max-width: 400px;
+            height: 100vh;
+            background: #88843c;
+            border-radius: 0 0 12px 12px;
+            transform: translateX(100%);
+            transition: transform 0.35s ease;
+            z-index: 1000;
+            overflow-y: auto;
+        }
+
+        nav.open {
+            transform: translateX(0);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* --- Farvede rækker --- */
+        nav li {
+            font-size: 2rem;
+            font-weight: 400;
+            padding: 1rem 2rem;
+        }
+
+        nav li:nth-child(1) {
+            background: #cdd0a3;
+        }
+
+        nav li:nth-child(2) {
+            background: #e6682b;
+        }
+
+        nav li:nth-child(3) {
+            background: #4c2724;
+            color: #d9d4b0;
+        }
+
+        nav li:nth-child(4) {
+            background: #cdd0a3;
+        }
+
+        nav li:nth-child(5) {
+            background: #e6682b;
+        }
+
+        nav li:nth-child(6) {
+            background: #4c2724;
+            color: #d9d4b0;
+        }
+
+        nav li:nth-child(7) {
+            background: #88843c;
+        }
+
+        nav a {
+            color: inherit;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Burger ikon -->
+
+
+    <script>
+        const burger = document.getElementById("burger");
+        const menu = document.getElementById("menu");
+
+        burger.addEventListener("click", () => {
+            burger.classList.toggle("open");
+            menu.classList.toggle("open");
+        });
+    </script>
+</body>
+
+</html>

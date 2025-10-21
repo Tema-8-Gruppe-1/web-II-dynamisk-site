@@ -18,18 +18,31 @@
 
 <body>
     <header>
-        <div class="header_underside">
+        <div class="header_index">
             <div class="menu_mobilsite">
                 <img class="logo" src="logo.png" alt="logo">
-                <a href="menu.html">
-                    <img class="burgermenu" src="burgermenu.png" alt="menu">
-                </a>
+                <div class="burger" id="burger">
+                    <span></span><span></span><span></span>
+                </div>
+
+                <!-- Menu -->
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="opskrifer.html">Opskrifter</a></li>
+                        <li><a href="madplan.html">Madplan</a></li>
+                        <li><a href="omos.html">Om os</a></li>
+                        <li><a href="min_profil.html">Min profil</a></li>
+                        <li><a href="opret_profil.html">Opret profil</a></li>
+                    </ul>
+                </nav>
             </div>
+            <h1 class="order">VORES KONCEPT</h1>
         </div>
+
     </header>
     <main>
 
-        <h1 class="card2">VORES KONCEPT</h1>
         <div class="card1">
             <p>Mauris egestas turpis. Vitae pulvinar lobortis vel ut at. Sed facilisis vestibulum, sed bibendum. Vitae,
                 tincidunt ut.
@@ -57,3 +70,12 @@
             <img src="svg/pinterest.svg" alt="pinterrest">
         </div>
     </footer>
+    <script>
+        const burger = document.getElementById("burger");
+        const menu = document.getElementById("menu");
+
+        burger.addEventListener("click", () => {
+            burger.classList.toggle("open");
+            menu.classList.toggle("open");
+        });
+    </script>

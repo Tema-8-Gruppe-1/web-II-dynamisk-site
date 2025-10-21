@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Opskrifter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="header_index">
+            <div class="menu_mobilsite">
+                <img class="logo" src="logo.png" alt="logo">
+
+                <div class="burger" id="burger">
+                    <span></span><span></span><span></span>
+                </div>
+
+                <!-- Menu -->
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html">Homepage</a></li>
+                        <li><a href="opskrifer.html">Opskrifter</a></li>
+                        <li><a href="madplan.html">Madplan</a></li>
+                        <li><a href="omos.html">Om os</a></li>
+                        <li><a href="min_profil.html">Min profil</a></li>
+                        <li><a href="opret_profil.html">Opret profil</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h1 class="order">OPSKRIFTER</h1>
+        </div>
+    </header>
+    <script>
+        const burger = document.getElementById("burger");
+        const menu = document.getElementById("menu");
+
+        burger.addEventListener("click", () => {
+            burger.classList.toggle("open");
+            menu.classList.toggle("open");
+        });
+    </script>
